@@ -3,7 +3,7 @@ export const products = [
   {
     id: 1,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -16,7 +16,7 @@ export const products = [
   {
     id: 8,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -29,7 +29,7 @@ export const products = [
   {
     id: 9,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -42,7 +42,7 @@ export const products = [
   {
     id:7,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -55,7 +55,7 @@ export const products = [
   {
     id: 10,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -68,7 +68,7 @@ export const products = [
   {
     id: 11,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -81,7 +81,7 @@ export const products = [
   {
     id: 12,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -94,7 +94,7 @@ export const products = [
   {
     id: 13,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -107,7 +107,7 @@ export const products = [
   {
     id: 14,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -120,7 +120,7 @@ export const products = [
   {
     id: 15,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -133,7 +133,7 @@ export const products = [
   {
     id: 16,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -146,7 +146,7 @@ export const products = [
   {
     id: 17,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -159,7 +159,7 @@ export const products = [
   {
     id: 18,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -172,7 +172,7 @@ export const products = [
   {
     id: 19,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -185,7 +185,7 @@ export const products = [
   {
     id: 20,
     name: "Check",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -198,7 +198,7 @@ export const products = [
   {
     id: 2,
     name: "Basic Tee",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -209,7 +209,7 @@ export const products = [
   {
     id: 5,
     name: "Casual Shirt",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Casual Shirt in blue.",
@@ -220,7 +220,7 @@ export const products = [
   {
     id: 3,
     name: "Summer Dress",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of women's Summer Dress in pink.",
@@ -231,7 +231,7 @@ export const products = [
   {
     id: 4,
     name: "Basic Tee",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of women's Basic Tee in white.",
@@ -242,7 +242,7 @@ export const products = [
   {
     id: 6,
     name: "Basic Tee",
-    href: "#",
+    href: "/product",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of women's Basic Tee in white.",

@@ -3,7 +3,7 @@ import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/logo1.png";
 
-function Navbar() {
+function Navbar({ cart }) {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const menuRef = useRef(null); // Reference for the menu
@@ -51,23 +51,22 @@ function Navbar() {
         </ul>
 
         {/* Right - Login/Signup/Cart */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center">
           <button
             onClick={() => navigate("/login")}
-            className="border-b-2 border-transparent hover:border-red-500 transition duration-300"
+            className="px-4 border-transparent hover:border-red-500 transition duration-300"
           >
             LOG IN
           </button>
-          <span className="text-gray-500">|</span>
-          {/* <button
-            onClick={() => navigate("/signup")}
-            className="border-b-2 border-transparent hover:border-red-500 transition duration-300"
-          >
-            GET STARTED
-          </button> */}
+          <span className="text-gray-500 pr-4">|</span>
           <Link to="/cart">
-            <FaShoppingCart className="text-xl hover:text-red-600" />
+            <FaShoppingCart size={28} />
           </Link>
+          {cart.length > 0 && (
+            <div className="relative bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+              {cart.length}
+            </div>
+          )}
         </div>
 
         {/* Mobile Menu Button (Hamburger / X) */}
@@ -78,7 +77,6 @@ function Navbar() {
           {isOpen ? <FaTimes className="text-red-600" /> : <FaBars />}
         </button>
       </nav>
-
       {/* Mobile Menu */}
       {isOpen && (
         <div

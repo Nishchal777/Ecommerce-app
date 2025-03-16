@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { products } from "../assets/Product"; // Import product list
+import { Link } from "react-router-dom";
 
 const Collections = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -67,10 +68,10 @@ const Collections = () => {
                 <div className="mt-4 px-2 flex justify-between items-center">
                   <div>
                     <h3 className="text-sm text-gray-700 font-bold">
-                      <a href={product.href}>
+                      <Link to={`/product/${product.id}`}>
                         <span aria-hidden="true" className="absolute inset-0" />
                         <div>{product.name}</div>
-                      </a>
+                      </Link>
                     </h3>
                     <p className="text-sm text-gray-500 mt-1 text-left">
                       {product.color}

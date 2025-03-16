@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function TopNav() {
   return (
     <div className="bg-gray-100 p-1.5  md:text-base">
-      <ul className="flex text-sm font-semibold opacity-50 flex-wrap justify-center md:justify-between px-4 md:px-[7vw]">
+      <ul className="flex text-sm font-semibold gap-1 opacity-50 flex-wrap justify-center md:justify-between px-4 md:px-[7vw]">
         <Link to="/about" className="hover:text-gray-900">
           About Us
         </Link>
