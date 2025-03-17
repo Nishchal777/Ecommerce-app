@@ -29,7 +29,7 @@ function Navbar({ cart }) {
       <nav className=" border-b relative w-full flex items-center sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-2">
         {/* Left - Logo */}
         <Link to="/" className="flex items-center">
-          <img src={logo} className="w-40" alt="Logo" />
+          <img src={logo} className="w-40 h-22" alt="Logo" />
         </Link>
 
         {/* Center - Desktop Menu */}
@@ -60,7 +60,7 @@ function Navbar({ cart }) {
           </button>
           <span className="text-gray-500 pr-4">|</span>
           <Link to="/cart">
-            <FaShoppingCart size={28} />
+            <FaShoppingCart size={25} />
           </Link>
           {cart.length > 0 && (
             <div className="relative bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">

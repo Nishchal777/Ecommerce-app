@@ -22,9 +22,11 @@ const Checkout = ({ cart }) => {
     );
     return total + DELIVERY_CHARGE;
   };
+  const [paymentMethod, setPaymentMethod] = useState("esewa"); // Default value
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    setPaymentMethod(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -50,9 +52,7 @@ const Checkout = ({ cart }) => {
   if (!cart || cart.length === 0) {
     return (
       <div className="max-w-3xl mx-auto p-6 mt-10 border rounded-md shadow-lg text-center">
-        <h2 className="text-2xl font-bold ">
-          No checkouts available
-        </h2>
+        <h2 className="text-2xl font-bold ">No checkouts available</h2>
         <p className="text-gray-500 mt-2">Your cart is empty.</p>
         <button
           onClick={() => navigate("/")}
@@ -127,17 +127,43 @@ const Checkout = ({ cart }) => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium">Payment Method</label>
-          <select
-            name="paymentMethod"
-            value={formData.paymentMethod}
-            onChange={handleChange}
-            className="w-full p-2 border rounded-md"
-          >
-            <option value="esewa">Esewa</option>
-            <option value="khalti">Khalti</option>
-            <option value="cod">Cash on Delivery (COD)</option>
-          </select>
+          <div className="max-w-md rounded-md">
+            <h2 className="block text-sm font-medium">Select Payment Method</h2>
+            <div className="lg:flex sm:grid gap-4 sm:gap-6 md:gap-10 lg:gap-14">
+              <label className="flex items-center space-x-1 mt-2 ">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="esewa"
+                  checked={paymentMethod === "esewa"}
+                  onChange={handleChange}
+                />
+                <span>Esewa</span>
+              </label>
+
+              <label className="flex items-center space-x-1 mt-2">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="khalti"
+                  checked={paymentMethod === "khalti"}
+                  onChange={handleChange}
+                />
+                <span>Khalti</span>
+              </label>
+
+              <label className="flex items-center space-x-1 mt-2">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="cod"
+                  checked={paymentMethod === "cod"}
+                  onChange={handleChange}
+                />
+                <span>Cash on Delivery</span>
+              </label>
+            </div>
+          </div>
         </div>
 
         <button
