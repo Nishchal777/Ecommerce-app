@@ -12,6 +12,7 @@ import Collections from "./Pages/Collections";
 import Product from "./Components/Product";
 import { useState } from "react";
 import Cart from "./Components/Cart";
+import Checkout from "./Components/Checkout";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -44,6 +45,7 @@ function App() {
             path="/cart"
             element={<Cart cart={cart} removeFromCart={removeFromCart} />}
           />
+          <Route path="/checkout" element={<Checkout cart={cart} />} />
         </Routes>
       </div>
       <Footer />
